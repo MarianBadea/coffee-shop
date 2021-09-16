@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CoffeeGrid from './components/CoffeeGrid/CoffeeGrid';
-import NavBar from './pages/NavBar';
+import NavBar from './pages/NavBar/NavBar';
 import { coffees } from '../src/mock-data/coffees.json'
 
 function App() {
