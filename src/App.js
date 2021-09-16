@@ -3,6 +3,7 @@ import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CoffeeGrid from './components/CoffeeGrid/CoffeeGrid';
 import NavBar from './pages/NavBar/NavBar';
+import Home from './pages/Home/Home';
 import { coffees } from '../src/mock-data/coffees.json'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <div>
         <Switch>
            <Route exact path='/'>
-            <p>Hello</p>
+            <Home />
           </Route>
           <Route exact path='/coffees'>
             <CoffeeGrid coffees={coffees} />
