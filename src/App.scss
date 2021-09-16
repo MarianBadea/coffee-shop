@@ -1,5 +1,9 @@
-.App {
+.app {
   text-align: center;
+
+  &__title{
+    color: #bda98e;
+  }
 }
 
 .App-logo {
