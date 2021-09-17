@@ -39,6 +39,26 @@
             "id" : 8,
             "name" : "Columbia",
             "picture" : "https://m7r8j2h3.stackpathcdn.com/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Colombia-where-to-buy-coffee-beans.png"
+        },
+        {
+            "id" : 9,
+            "name" : "Guatemala",
+            "picture" : "https://m7r8j2h3.stackpathcdn.com/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Guatemala-fresh-coffee-beans.png"
+        },
+        {
+            "id" : 10,
+            "name" : "Costa Rica",
+            "picture" : "https://m7r8j2h3.stackpathcdn.com/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Costa-Rica-where-to-buy-coffee-beans-Australia.png"
+        },
+        {
+            "id" : 11,
+            "name" : "Columbia",
+            "picture" : "https://m7r8j2h3.stackpathcdn.com/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Colombia-where-to-buy-coffee-beans.png"
+        },
+        {
+            "id" : 12,
+            "name" : "Ethiopia",
+            "picture" : "https://m7r8j2h3.stackpathcdn.com/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Ethiopia-coffee-beans-online.png"
         }
     ]
 }
