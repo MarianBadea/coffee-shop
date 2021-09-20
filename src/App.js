@@ -10,18 +10,18 @@ function App() {
   return (
     <Router>
       <div className="app">
-      <h1 className="app__title">CoffeeShop</h1>
-      <NavBar />
-      <div>
-        <Switch>
-           <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/coffees'>
-            <CoffeeGrid coffees={coffees} />
-          </Route>
-        </Switch>
-      </div>
+        <h1 className="app__title">CoffeeShop</h1>
+          <NavBar />
+          <div>
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+              <Route exact path='/coffees'>
+                <CoffeeGrid coffees={coffees} />
+              </Route>
+            </Switch>
+          </div>
       </div>
 
     </Router>

@@ -14,7 +14,9 @@ function CoffeeGrid({ coffees }) {
       console.log(tiles);
     
     return (
-        <div className="coffee-tiles">{ tiles }</div>
+        <div className="coffee-tiles">
+          { tiles }
+        </div>
     );
 }
 
