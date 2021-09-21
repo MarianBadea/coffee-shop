@@ -27,12 +27,20 @@ function CoffeeGrid({ coffees }) {
     
     return (
         <div className="coffee-grid">
-          <Select 
-            placeholder="Sort by..."
-            name="filters"
-            options={filterOptions}
-            className="coffee-grid__filter"
-          />
+          <div className="coffee-grid__filters">
+            <Select 
+              className="coffee-grid__filter"
+              placeholder="Sort by..."
+              name="filters"
+              options={filterOptions}
+            />
+            <Select 
+              className="coffee-grid__filter"
+              placeholder="Sort by..."
+              name="filters"
+              options={filterOptions}
+            />
+          </div>
           <div className="coffee-grid__tiles">{ tiles }</div>
         </div>
     );
