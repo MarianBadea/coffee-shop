@@ -1,0 +1,20 @@
+{
+    "filters": [
+       {
+           "id": 1,
+           "name": "By price",
+           "value": "by price"
+       },
+       {
+           "id": 2,
+           "name": "By populatity",
+           "value": "by populatity"
+       },
+       {
+           "id": 3,
+           "name": "By latest",
+           "value": "by latest"
+       }
+     ]
+   }
+   

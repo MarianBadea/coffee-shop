@@ -1,21 +1,31 @@
-.coffee-tiles {
+.coffee-grid{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__filter {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  &__tiles{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.87rem 1.87rem;
     margin: 2rem auto;
     max-width: 30rem;
-}
-
-@media screen and (min-width: 760px) {
-    .coffee-tiles {
+  }
+  @media screen and (min-width: 760px) {
+    &__tiles {
       grid-template-columns: repeat(3, 1fr);
       max-width: 46.875rem;
     }
   }
   
   @media screen and (min-width: 1024px) {
-    .coffee-tiles {
+    &__tiles {
       grid-template-columns: repeat(4, 1fr);
       max-width: 64rem;
     }
   }
+}
+
