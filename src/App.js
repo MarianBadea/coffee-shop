@@ -5,6 +5,7 @@ import CoffeeGrid from './components/CoffeeGrid/CoffeeGrid';
 import NavBar from './pages/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import { coffees } from '../src/mock-data/coffees.json'
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <Footer />
       </div>
 
     </Router>
