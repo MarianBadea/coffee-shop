@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BagPlus } from 'react-bootstrap-icons';
 import CoffeeGrid from './components/CoffeeGrid/CoffeeGrid';
 import NavBar from './pages/NavBar/NavBar';
 import Home from './pages/Home/Home';
@@ -14,17 +15,19 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1 className="app__title">CoffeeShop</h1>
+        <h1 className="app__title">
+        CoffeeShop
         <button
           onClick={ () => setOpenModal(true) }
         >
-          Baschet
+           <BagPlus />
         </button>
         <Modal 
           title="Shopping Baschet"
           isOpen={ openModal }
           onClose={ () => setOpenModal(false) }
         />
+        </h1>
         <div className="app__content">
           <NavBar />
             <div>
