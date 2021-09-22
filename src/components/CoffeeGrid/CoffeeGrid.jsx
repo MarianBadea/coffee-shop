@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import CoffeeTile from '../CoffeeTile/CoffeeTile';
 import './CoffeeGrid.scss'
+import React from 'react';
+import Select from 'react-select';
+import { filters } from '../../mock-data/filters.json';
 
 function CoffeeGrid({ coffees }) {
     const tiles = coffees.map((type) => (
@@ -11,10 +14,35 @@ function CoffeeGrid({ coffees }) {
           key={ type.id }
         />
       ));
-      console.log(tiles);
+
+      const filterOptions = filters.map((filter) => {
+          return {
+            value: filter.value,
+            label: filter.name,
+          }
+        }
+      );
+
+      console.log(filterOptions)
     
     return (
-        <div className="coffee-tiles">{ tiles }</div>
+        <div className="coffee-grid">
+          <div className="coffee-grid__filters">
+            <Select 
+              className="coffee-grid__filter"
+              placeholder="Sort by..."
+              name="filters"
+              options={filterOptions}
+            />
+            <Select 
+              className="coffee-grid__filter"
+              placeholder="Sort by..."
+              name="filters"
+              options={filterOptions}
+            />
+          </div>
+          <div className="coffee-grid__tiles">{ tiles }</div>
+        </div>
     );
 }
 
