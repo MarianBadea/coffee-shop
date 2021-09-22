@@ -12,18 +12,22 @@ function App() {
     <Router>
       <div className="app">
         <h1 className="app__title">CoffeeShop</h1>
+        <div className="app__content">
           <NavBar />
-          <div>
-            <Switch>
-              <Route exact path='/'>
-                <Home />
-              </Route>
-              <Route exact path='/coffees'>
-                <CoffeeGrid coffees={coffees} />
-              </Route>
-            </Switch>
-          </div>
-          <Footer />
+            <div>
+              <Switch>
+                <Route exact path='/'>
+                  <Home />
+                </Route>
+                <Route exact path='/coffees'>
+                  <CoffeeGrid coffees={coffees} />
+                </Route>
+              </Switch>
+            </div>
+        </div>
+        <div className="app__footer" >
+        <Footer />
+        </div>
       </div>
 
     </Router>
