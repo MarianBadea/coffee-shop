@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CoffeeGrid from './components/CoffeeGrid/CoffeeGrid';
@@ -6,12 +6,18 @@ import NavBar from './pages/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import { coffees } from '../src/mock-data/coffees.json'
 import Footer from './pages/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
+  const [ openModal, setOpenModal ] = useState(false)
+
   return (
     <Router>
       <div className="app">
-        <h1 className="app__title">CoffeeShop</h1>
+        <Header
+          openModal={ openModal }
+          setOpenModal={ setOpenModal }
+        />
         <div className="app__content">
           <NavBar />
             <div>
