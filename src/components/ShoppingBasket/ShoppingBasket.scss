@@ -1,0 +1,28 @@
+
+  .header{
+    background-color: #bda98e;
+    display: flex;
+    justify-content: space-around;
+
+    &__title{
+      flex-grow: 1;
+      color:black;
+      font-size: 1.4rem;
+      font-weight: bold;
+      font-family: cursive;
+      padding: 0.5rem;
+      max-width: 47rem;
+    }
+
+    &__basket{
+        margin: auto 0;
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+  }

@@ -6,7 +6,7 @@ import NavBar from './pages/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import { coffees } from '../src/mock-data/coffees.json'
 import Footer from './pages/Footer/Footer';
-import ShoppingBasket from './components/ShoppingBasket/ShoppingBasket';
+import Header from './components/ShoppingBasket/ShoppingBasket';
 
 function App() {
   const [ openModal, setOpenModal ] = useState(false)
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <ShoppingBasket
+        <Header
           openModal={ openModal }
           setOpenModal={ setOpenModal }
         />
