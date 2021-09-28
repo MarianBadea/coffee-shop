@@ -6,7 +6,7 @@ import NavBar from './pages/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import { coffees } from '../src/mock-data/coffees.json'
 import Footer from './pages/Footer/Footer';
-import Header from './components/ShoppingBasket/ShoppingBasket';
+import Header from './components/Header/Header';
 
 function App() {
   const [ openModal, setOpenModal ] = useState(false)
